@@ -11,14 +11,14 @@
 <table>
     <tr>
         <th>Title</th>
-        <th>URL</th>
+        <!--<th>URL</th>-->
         <th>Date Submitted</th>
         <th>Submitted By</th>
     </tr>
 
     <tr th:each="link: ${links}">
-        <td th:text="${link.title}"></td>
-        <td th:text="${link.url}"></td>
+        <a href="http://www.google.com" target="_blank"><td th:text="${link.title}"></td></a>
+        <!--<td th:text="${link.url}"></td> -->
         <td th:text="${link.date}"></td>
         <td th:text="${link.submittedBy}"></td>
         <td>
