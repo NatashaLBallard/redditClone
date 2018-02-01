@@ -17,7 +17,7 @@
     </tr>
 
     <tr th:each="link: ${links}">
-        <a href="http://www.google.com" target="_blank"><td th:text="${link.title}"></td></a>
+        <a th:href="@{'//'+${link.url}}" target="_blank"><td th:text="${link.title}"></td></a>
         <!--<td th:text="${link.url}"></td> -->
         <td th:text="${link.date}"></td>
         <td th:text="${link.submittedBy}"></td>
