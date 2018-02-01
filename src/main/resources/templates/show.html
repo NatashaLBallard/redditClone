@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+<h2><a href="/">Show All Submitted Links</a></h2>
+    <b>Title: </b><span th:text="${link.title}"></span><br/>
+    <b>URL: </b><span th:text="${link.url}"></span><br/>
+    <b>Date Submitted: </b><span th:text="${link.date}"></span><br/>
+    <b>Submission By: </b><span th:text="${link.submittedBy}"></span><br/>
+    <br/>
+    <a th:href="@{/delete/{id}(id=${link.id})}">Delete This Link</a>
+
+</body>
+</html>
