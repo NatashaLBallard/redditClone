@@ -8,14 +8,15 @@
 
 <a href="/add">Add Link</a>
 
-<table>
-    <tr>
+<table border="2">
+    <tr align="center">
         <th>Title</th>
         <th>Date Submitted</th>
         <th>Submitted By</th>
+        <th>Options</th>
     </tr>
 
-    <tr th:each="link: ${links}">
+    <tr th:each="link: ${links}" align="center">
         <td>
             <a th:href="@{'//'+${link.url}}" target="_blank" th:text="${link.title}"></a>
         </td>
